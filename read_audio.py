@@ -10,7 +10,6 @@ folder_path = 'speech_TEST/TIMIT_TEST/DR1/FAKS0/'
 
 list = os.listdir(folder_path)
 
-
 sph = SPHFile(file_path)
 print(sph.format)
 sph.write_wav( 'test.wav' )
