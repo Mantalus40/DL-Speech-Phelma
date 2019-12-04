@@ -3,9 +3,9 @@ import sys
 #sys.path.append("tracker/deep_sort/deep_sort")
 import numpy as np
 from path import Path
+from sphfile import SPHFile
 
-
-for file_path in Path('speech_TRAIN_1/TIMIT_TRAIN_1').walkfiles('*.WAV'):
+for file_path in Path('speech_TEST/TIMIT_TEST').walkfiles('*.WAV'):
 
     save_path = os.path.dirname(os.path.dirname(os.path.dirname(file_path))) + '_WAV/' + os.path.basename(os.path.dirname(os.path.dirname(file_path))) + '/' + os.path.basename(os.path.dirname(file_path))+ '/'+os.path.basename(file_path)
 
